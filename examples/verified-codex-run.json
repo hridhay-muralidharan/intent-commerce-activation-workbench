@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "1.0",
+  "runId": "restock-recovery-2026-07-09T13-49-49-379Z",
+  "opportunityId": "opp-restock-p-alpine-shell",
+  "merchantBrief": "Northstar Outdoor has 42 units of the Cedar / M Alpine Storm Shell available after a restock from zero one day ago. Fifty-five shoppers expressed intent without an observed purchase, and no restock campaign appears in the last 30 days. At the scenario-assumed 8% conversion rate and current $188 price, the deterministic scenario value is $827.20; this is an assumption, not a forecast or causal estimate.",
+  "recommendedAction": "After human approval, run a controlled restock email test only among shoppers confirmed eligible by consent and deliverability checks. Randomly retain a holdout group for attribution, verify inventory immediately before activation, and measure incremental purchases against the holdout without claiming causal impact beforehand.",
+  "campaignDraft": {
+    "subject": "The Alpine Storm Shell is back in Cedar / M",
+    "body": "The Alpine Storm Shell in Cedar / M is back in stock at Northstar Outdoor for $188. Availability may change, so check the current product page if you are still interested.",
+    "channel": "email"
+  },
+  "evidenceRefs": [
+    "evidence-product-p-alpine-shell",
+    "evidence-intent-p-alpine-shell",
+    "evidence-restock-p-alpine-shell",
+    "evidence-campaign-p-alpine-shell"
+  ],
+  "missingInformation": [
+    "Shopper consent and channel eligibility status",
+    "Email deliverability and suppression status",
+    "Inventory available immediately before activation",
+    "Eligible audience size after consent, deliverability, and suppression checks",
+    "Holdout allocation and test duration"
+  ],
+  "risks": [
+    "Inventory may fall below demand before or during activation.",
+    "The assumed 8% conversion rate may not reflect observed performance.",
+    "Without a randomized holdout, incremental impact cannot be attributed to the campaign.",
+    "Sending without verified consent or deliverability status could create compliance or reputation risk."
+  ],
+  "confidence": 88,
+  "reviewRequired": true,
+  "provenance": {
+    "mode": "cli_agent",
+    "agent": "codex",
+    "createdAt": "2026-07-09T13:49:49.380Z",
+    "inputHash": "4db4d5b64d2212eb",
+    "promptVersion": "commerce-analyst-1.0"
+  }
+}

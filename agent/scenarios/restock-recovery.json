@@ -1,0 +1,53 @@
+{
+  "scenarioId": "restock-recovery",
+  "merchant": {
+    "id": "m-northstar",
+    "name": "Northstar Outdoor",
+    "category": "Outdoor apparel"
+  },
+  "product": {
+    "id": "p-alpine-shell",
+    "name": "Alpine Storm Shell",
+    "variant": "Cedar / M",
+    "currentPrice": 188,
+    "inventoryBefore": 0,
+    "inventoryNow": 42
+  },
+  "opportunity": {
+    "id": "opp-restock-p-alpine-shell",
+    "type": "restock_recovery",
+    "addressableShoppers": 55,
+    "assumedConversionRate": 0.08,
+    "scenarioValue": 827.2,
+    "scenarioValueIsForecast": false
+  },
+  "evidence": [
+    {
+      "id": "evidence-product-p-alpine-shell",
+      "claim": "The current product price is $188.",
+      "sourceRefs": ["p-alpine-shell"]
+    },
+    {
+      "id": "evidence-intent-p-alpine-shell",
+      "claim": "55 unique shoppers expressed intent and have no observed purchase.",
+      "sourceRefs": ["alpine-intent-1", "alpine-wish-intent-1"]
+    },
+    {
+      "id": "evidence-restock-p-alpine-shell",
+      "claim": "Inventory moved from 0 to 42 units one day ago.",
+      "sourceRefs": ["inventory-alpine-restock"]
+    },
+    {
+      "id": "evidence-campaign-p-alpine-shell",
+      "claim": "No restock campaign appears in the last 30 days.",
+      "sourceRefs": []
+    }
+  ],
+  "knownConstraints": [
+    "Consent and deliverability status are not included.",
+    "Inventory may change before activation.",
+    "The 8% conversion rate is a scenario assumption, not a prediction.",
+    "A holdout group is required for attribution.",
+    "A human must approve every activation."
+  ]
+}

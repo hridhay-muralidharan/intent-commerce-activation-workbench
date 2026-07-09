@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "1.0",
+  "runId": "cached-opp-restock-p-alpine-shell",
+  "opportunityId": "opp-restock-p-alpine-shell",
+  "merchantBrief": "55 shoppers expressed intent before inventory returned. The estimated value is a scenario assumption, not a forecast. The source data supports a controlled activation test with human approval.",
+  "recommendedAction": "Prepare a back-in-stock email for the eligible audience, reserve a holdout group, and require inventory confirmation before send.",
+  "campaignDraft": {
+    "subject": "Alpine Storm Shell is available again",
+    "body": "You showed interest in Alpine Storm Shell. It is available now. Review the current price and availability before deciding.",
+    "channel": "email"
+  },
+  "evidenceRefs": [
+    "evidence-product-p-alpine-shell",
+    "evidence-intent-p-alpine-shell",
+    "evidence-restock-p-alpine-shell",
+    "evidence-campaign-p-alpine-shell"
+  ],
+  "missingInformation": [
+    "Current deliverability and consent status",
+    "Merchant-specific suppression rules"
+  ],
+  "risks": [
+    "Inventory may change before activation",
+    "Estimated revenue depends on a stated conversion assumption"
+  ],
+  "confidence": 88,
+  "reviewRequired": true,
+  "provenance": {
+    "mode": "cached_example",
+    "agent": "Codex CLI example run",
+    "createdAt": "2026-07-09T09:00:00.000Z",
+    "inputHash": "sample-run-cd31a4",
+    "promptVersion": "commerce-analyst-1.0"
+  }
+}
