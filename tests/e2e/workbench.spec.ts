@@ -10,6 +10,8 @@ test("reviews an activation opportunity and inspects evidence", async ({ page })
   await page.getByRole("button", { name: /Inspect evidence/ }).click();
   await expect(page.getByRole("heading", { name: /Every recommendation must point/ })).toBeVisible();
   await page.screenshot({ path: "/tmp/intent-commerce-workbench.png", fullPage: true });
+  await page.getByRole("button", { name: "Evaluation" }).click();
+  await expect(page.getByRole("heading", { name: /Review behavior is part/ })).toBeVisible();
 });
 
 test("has no horizontal overflow on a mobile viewport", async ({ page }) => {

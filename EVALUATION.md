@@ -33,3 +33,7 @@ Test whether the workflow is useful, evidence-grounded, and appropriately restra
 ## Known gap
 
 The low-confidence threshold is intentionally unresolved. Different merchants have different tolerance for false positives, and the prototype does not invent a universal threshold.
+
+## Adoption instrumentation
+
+The product defines measurements for accepted, edited, and rejected recommendations plus review time. Values shown in the demo are labelled synthetic because no team has deployed the workflow.

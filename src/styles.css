@@ -675,6 +675,58 @@ h1 {
   gap: 12px;
 }
 
+.adoption-panel {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.8fr) minmax(0, 1.4fr);
+  gap: 40px;
+  margin-top: 50px;
+  padding: 30px;
+  border-radius: 14px;
+  background: var(--surface-strong);
+}
+
+.adoption-panel > div:first-child > span {
+  color: var(--accent);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+}
+
+.adoption-panel h2 {
+  margin: 20px 0 10px;
+  font-size: 1.45rem;
+}
+
+.adoption-panel p {
+  margin-bottom: 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.adoption-metrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.adoption-metrics > div {
+  display: grid;
+  gap: 6px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.adoption-metrics strong {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1.35rem;
+}
+
+.adoption-metrics span {
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
 .evaluation-case {
   display: flex;
   min-height: 118px;
@@ -858,6 +910,10 @@ h1 {
     position: static;
   }
 
+  .adoption-panel {
+    grid-template-columns: 1fr;
+  }
+
   .architecture-flow {
     grid-template-columns: 1fr;
   }
@@ -947,7 +1003,8 @@ h1 {
 
   .evidence-grid,
   .evaluation-cases,
-  .principles-grid {
+  .principles-grid,
+  .adoption-metrics {
     grid-template-columns: 1fr;
   }
 

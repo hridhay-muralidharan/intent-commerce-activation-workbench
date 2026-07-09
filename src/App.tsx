@@ -347,6 +347,19 @@ export default function App() {
                   ))}
                 </div>
               </div>
+              <section className="adoption-panel">
+                <div>
+                  <span>Synthetic workflow-adoption sample</span>
+                  <h2>Review behavior is part of the product outcome.</h2>
+                  <p>These example measurements show what a production pilot should capture. They are not observed team usage.</p>
+                </div>
+                <div className="adoption-metrics">
+                  <div><strong>12</strong><span>recommendations reviewed</span></div>
+                  <div><strong>7</strong><span>accepted unchanged</span></div>
+                  <div><strong>3</strong><span>edited before approval</span></div>
+                  <div><strong>2m 14s</strong><span>median review time</span></div>
+                </div>
+              </section>
             </section>
           )}
 
