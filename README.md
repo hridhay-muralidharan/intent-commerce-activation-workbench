@@ -15,7 +15,9 @@ A working product prototype that turns synthetic shopper-intent signals into evi
 
 ## Live demo
 
-Publish the `dist/` build through GitHub Pages after creating the standalone repository. The app is configured with a relative Vite base path.
+Live demo: https://hridhay-muralidharan.github.io/intent-commerce-activation-workbench/
+
+The app is configured with a relative Vite base path, so the Pages deploy works from the repository root.
 
 ## Five-minute setup
 
